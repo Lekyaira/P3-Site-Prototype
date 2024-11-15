@@ -7,10 +7,12 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-light">
+<!--Navigation-->
+    <nav class="navbar navbar-expand-sm bg-secondary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" <!--placeholder - to home-->>Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!--TODO: placeholder - add link to home-->
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"/>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -28,10 +30,19 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Small Pets</a>
             </li>
+            <li class="nav-item">
+              <!--TODO: If this were a real site search calls would go here.-->
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </li>
           </ul>
+          <button class="btn" type="button">Book Consultation</button>
         </div>
       </div>
     </nav>
+<!--Logo-->
     <div class="container">
       <div class="row">
         <div class="col-sm">
@@ -44,11 +55,13 @@
         <div class="col-sm">
         </div>
       </div>
+<!--Company description-->
       <div class="row">
         <div class="col-sm">
           <p>Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.</p>
         </div>
       </div>
+<!--Info-->
       <div class="row">
         <div class="col-sm">
           <p>Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion.</p>
@@ -66,6 +79,7 @@
         </div>
       </div>
     </div>
+<!--Bootstrap Javascript-->
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
