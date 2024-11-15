@@ -11,5 +11,5 @@ do
   sass "$f" "dist/css/$nf"
 done
 cp ./src/*.html ./dist/
-cp -r ./src/js ./dist/
+# cp -r ./src/js ./dist/
 cp -r ./src/media ./dist/
