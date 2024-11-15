@@ -1,8 +1,48 @@
 // Website theme colors.
-$primary: #6699cc;
-$secondary: #bdbdbd;
+$Midnight-Blue: #003b6d;
+$Blue-Sky: #6699cc;
+$Dim-Gray: #676767;
+$Silver: #bdbdbd;
+$Black: #080808;
+
+// Bootstrap colors.
+$primary: $Blue-Sky;
+$secondary: $Silver;
+$light: $Silver;
+$black: $Black;
   
 // Increase default font size.
 $font-size-root: 24px;
 
+// Navbar
+$navbar-light-color: $Black;
+$navbar-light-hover-color: $Midnight-Blue;
+$navbar-light-active-color: $Midnight-Blue;
+$navbar-light-disabled-color: $Dim-Gray;
+
+// Bootstrap import
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Bootstrap Post-Setup
+
+// Navbar
+.navbar-brand img {
+  width: $nav-link-height;
+  height: $nav-link-height;
+}
+
+// Logo image
+.p3-logo {
+  padding: 1rem 0 0 1rem;
+}
+
+// Consultation button
+.btn-outline-primary {
+  color: $Black !important;
+  border-color: $Black !important;
+}
+
+.btn-outline-primary:hover {
+  color: $Midnight-Blue !important;
+  border-color: transparent !important;
+}
