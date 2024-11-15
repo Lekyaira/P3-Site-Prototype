@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paradigm Pet Professionals - Cats</title>
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 <!--Navigation-->
     <!--Would normally be populated from framework template.-->
-    <nav class="navbar nav-pills navbar-expand-sm bg-light">
+    <nav class="navbar nav-pills navbar-expand-sm bg-light d-flex flex-column">
       <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img src="media/images/logo.png" alt="Paradigm Pet Professionals"/>
-          </a>
+        <a class="navbar-brand" href="../index.html">
+          <img src="../media/images/logo.png" alt="Paradigm Pet Professionals"/>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"/>
         </button>
@@ -25,7 +25,6 @@
             <li class="nav-item">
               <a class="nav-link active" href="#">Cats</a>
             </li>
-            <!--TODO: Add submenus-->
             <li class="nav-item">
               <a class="nav-link" href="../dogs/dogs.html">Dogs</a>
             </li>
@@ -43,10 +42,17 @@
           <button class="btn btn-outline-primary" type="button">Book Consultation</button>
         </div>
       </div>
+      <div class="container-fluid">
+        <div class="btn-group mx-auto ms-md-5">
+          <a href="kittens.html" class="btn btn-outline-primary btn-sm">Kittens</a>
+          <a href="adults.html" class="btn btn-outline-primary btn-sm">Adults</a>
+          <a href="elders.html" class="btn btn-outline-primary btn-sm">Elders</a>
+        </div>
+      </div>
     </nav>
-    <!--TODO: Add breadcrumbs-->
 <!--Content-->
     <div class="container">
+      <h3>Cats</h3>
       <p>Cats were first domesticated around 7500 BCE in the western Asia region and are currently the second most popular domestic pet in the United States. While there are over 60 unique documented cat breeds, care and diet can differ between breeds. However, some diets and practices are generally recommended for the well-being of your fluffy family member regardless of breed.</p>
     </div>
 <!--Bootstrap Javascript-->
