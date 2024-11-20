@@ -7,6 +7,62 @@
     <link href="../css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+<!--Consult Modal-->
+    <div class="modal fade" id="consultModal" tabindex="-1" aria-labeppedby="consultModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="consultModalLabel">Book Consultation</h1>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close" />
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="ownerName" placeholder="Pet Owner's Name"/>
+                <label for="ownerName">Pet Owner's Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number"/>
+                <label for="phoneNumber">Phone Number</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Email Address"/>
+                <label for="email">Email Address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <select class="form-select" aria-label="Time Zone">
+                  <option value="UTC-08" selected>Pacific - PST</option>
+                  <option value="UTC-07">Mountain - MST</option>
+                  <option value="UTC-06">Central - CST</option>
+                  <option value="UTC-05">Eastern - EST</option>
+                  <option value="UTC-09">Alaska - AKST</option>
+                  <option value="UTC-10">Hawaii - HST</option>
+                </select>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="petName" placeholder="Pet's Name"/>
+                <label for="ownerName">Pet's Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <select class="form-select" aria-label="Pet Type">
+                  <option value="cat" selected>Cat</option>
+                  <option value="dog">Dog</option>
+                  <option value="small-pet">Small Pet</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="petAge" placeholder="Pet's Age"/>
+                <label for="petAge">Pet's Age</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Book</button>
+          </div>
+        </div>
+      </div>
+    </div>
 <!--Navigation-->
     <!--Would normally be populated from framework template.-->
     <nav class="navbar sticky-top nav-pills navbar-expand-md bg-light">
@@ -39,15 +95,15 @@
               </form>
             </li>
           </ul>
-          <button class="btn btn-outline-primary" type="button">Book Consultation</button>
+          <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#consultModal">Book Consultation</button>
         </div>
       </div>
     </nav>
     <div class="container">
       <h3>Small Pets</h3>
-      <img src="../media/images/guinnies.png" class="img-fluid float-end ms-2 rounded" />
+      <img src="../media/images/guinnies.png" class="img-fluid float-end ms-2 rounded" alt="Two gerbils eating carrots"/>
       <p>Sometimes we want a pet in our life but think it’s impossible because we are not home enough to take care of it, or we don’t have enough room. Consider adopting a small animal such as a hermit crab, mouse, gerbil, hamster, guinea pig, or even a chinchilla! Depending on which type of animal you adopt, you can provide a comfortable environment using anything from small to large cages or glass aquariums. You will also need to provide amenities for your new pet, such as bedding or substrate, toys, an exercise wheel, a water dish or drip bottle, a food dish, and grooming equipment. You also need to consider if your new pet will need a friend or if it will be happy living alone. Our “Pexperts” are here to help you decide which pet is right for you and how to provide them with a happy home. Schedule a consultation with us today!</p>
-      <img src="../media/images/ferret.png" class="img-fluid float-start me-2 rounded" />
+      <img src="../media/images/ferret.png" class="img-fluid float-start me-2 rounded" alt="Ferret smelling dropper of essential oils"/>
       <p>Here are some resources to get you started:</p>
       <ul class="list-group ms-3">
         <li class="list-group-item">Guinea Pig Care: <a href="https://www.animalhumanesociety.org/adoption/guinea-pig-care">https://www.animalhumanesociety.org/adoption/guinea-pig-care</a></li>
