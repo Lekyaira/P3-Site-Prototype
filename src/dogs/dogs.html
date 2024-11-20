@@ -7,6 +7,62 @@
     <link href="../css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+<!--Consult Modal-->
+    <div class="modal fade" id="consultModal" tabindex="-1" aria-labeppedby="consultModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="consultModalLabel">Book Consultation</h1>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close" />
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="ownerName" placeholder="Pet Owner's Name"/>
+                <label for="ownerName">Pet Owner's Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number"/>
+                <label for="phoneNumber">Phone Number</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Email Address"/>
+                <label for="email">Email Address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <select class="form-select" aria-label="Time Zone">
+                  <option value="UTC-08" selected>Pacific - PST</option>
+                  <option value="UTC-07">Mountain - MST</option>
+                  <option value="UTC-06">Central - CST</option>
+                  <option value="UTC-05">Eastern - EST</option>
+                  <option value="UTC-09">Alaska - AKST</option>
+                  <option value="UTC-10">Hawaii - HST</option>
+                </select>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="petName" placeholder="Pet's Name"/>
+                <label for="ownerName">Pet's Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <select class="form-select" aria-label="Pet Type">
+                  <option value="cat" selected>Cat</option>
+                  <option value="dog">Dog</option>
+                  <option value="small-pet">Small Pet</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="petAge" placeholder="Pet's Age"/>
+                <label for="petAge">Pet's Age</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Book</button>
+          </div>
+        </div>
+      </div>
+    </div>
 <!--Navigation-->
     <!--Would normally be populated from framework template.-->
     <nav class="navbar sticky-top nav-pills navbar-expand-md bg-light d-flex flex-column">
@@ -39,7 +95,7 @@
               </form>
             </li>
           </ul>
-          <button class="btn btn-outline-primary" type="button">Book Consultation</button>
+          <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#consultModal">Book Consultation</button>
         </div>
       </div>
       <div class="container-fluid">
@@ -53,7 +109,7 @@
 <!--Content-->
     <div class="container">
       <h3>Dogs</h3>
-      <img src="../media/images/dogs.png" class="img-fluid float-end ms-2 rounded" />
+      <img src="../media/images/dogs.png" class="img-fluid float-end ms-2 rounded" alt="Two dogs, white and black, on rug"/>
       <p>The domestic dog is an extremely social animal and offers a diverse variety of choices as there are well over 300 breeds recognized by the World Canine Organization. Adopting a dog offers mutual benefits between dog and owner. Many studies cite the social benefits of having a companion as well as the reduced feelings of loneliness from adopting a dog. Studies even show medical indicators such as <a href="https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.119.005554">reduced blood pressure and improved lipid profiles</a>. If you have a dog, it is important to make sure that you care for your dog; be mindful of what you feed your dog and provide enough opportunities for exercise. In this page, you will find more information about how to care for your pets throughout the various stages of their lives.</p>
     </div>
 <!--Bootstrap Javascript-->

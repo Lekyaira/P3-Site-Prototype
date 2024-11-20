@@ -7,6 +7,62 @@
     <link href="../css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+<!--Consult Modal-->
+    <div class="modal fade" id="consultModal" tabindex="-1" aria-labeppedby="consultModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="consultModalLabel">Book Consultation</h1>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close" />
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="ownerName" placeholder="Pet Owner's Name"/>
+                <label for="ownerName">Pet Owner's Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number"/>
+                <label for="phoneNumber">Phone Number</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Email Address"/>
+                <label for="email">Email Address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <select class="form-select" aria-label="Time Zone">
+                  <option value="UTC-08" selected>Pacific - PST</option>
+                  <option value="UTC-07">Mountain - MST</option>
+                  <option value="UTC-06">Central - CST</option>
+                  <option value="UTC-05">Eastern - EST</option>
+                  <option value="UTC-09">Alaska - AKST</option>
+                  <option value="UTC-10">Hawaii - HST</option>
+                </select>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="petName" placeholder="Pet's Name"/>
+                <label for="ownerName">Pet's Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <select class="form-select" aria-label="Pet Type">
+                  <option value="cat" selected>Cat</option>
+                  <option value="dog">Dog</option>
+                  <option value="small-pet">Small Pet</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="petAge" placeholder="Pet's Age"/>
+                <label for="petAge">Pet's Age</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Book</button>
+          </div>
+        </div>
+      </div>
+    </div>
 <!--Navigation-->
     <!--Would normally be populated from framework template.-->
     <nav class="navbar sticky-top nav-pills navbar-expand-md bg-light d-flex flex-column">
@@ -39,7 +95,7 @@
               </form>
             </li>
           </ul>
-          <button class="btn btn-outline-primary" type="button">Book Consultation</button>
+          <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#consultModal">Book Consultation</button>
         </div>
       </div>
       <div class="container-fluid">
@@ -53,7 +109,7 @@
 <!--Content-->
     <div class="container">
       <h3>Grooming & Handling</h3>
-      <img src="../media/images/dog_bath.png" class="img-fluid float-end ms-2 rounded" />
+      <img src="../media/images/dog_bath.png" class="img-fluid float-end ms-2 rounded" alt="Dog being bathed"/>
       <p>Keeping your furry family member clean is important to its health. So be sure to brush frequently to reduce the amount of shedding and prevent matted and tangled fur that can prove to be extremely difficult to remove. Check for insects such as ticks and fleas, especially after visiting heavily wooded areas. Bathing is not only important to your dog’s health but can be an exercise depending on how strong willed the dog is. Rinse <strong>all</strong> of the soap out, as any residual soap can result in a rash. Be sure the soap is formulated for your puppy or dog, since harsh soaps can cause allergic reactions. And as always, be careful how you handle your loved one. No matter the size of your dog, you need to be cautious as you carry your canine. If you have a small dog, then cradle the pup with one hand under the chest and the forearm supporting the back half. If it is a large dog, reach under the belly with both your arms perpendicular to the dog, and use each arm to support the chest and rear as you lift.</p>
     </div>
 <!--Bootstrap Javascript-->
