@@ -20,6 +20,9 @@ $navbar-light-hover-color: $Midnight-Blue;
 $navbar-light-active-color: $Midnight-Blue;
 $navbar-light-disabled-color: $Dim-Gray;
 
+// Enable negative margins.
+$enable-negative-margins: true;
+
 // Bootstrap import
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -40,4 +43,9 @@ $navbar-light-disabled-color: $Dim-Gray;
 .btn-outline-primary:hover {
   color: $Midnight-Blue !important;
   border-color: transparent !important;
+}
+
+// Footer
+.footer-rule {
+  height: 0px;
 }
